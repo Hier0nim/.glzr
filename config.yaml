@@ -90,7 +90,7 @@ main_bar: &main_bar
       border_color: *crust
 
     - type: text file # Song title underlined section
-      file_path: "C:/Users/hieronim/.glaze-wm/scripts/song_info_1.txt"
+      file_path: ".glaze-wm/scripts/song_info_1.txt"
       padding: 3 0 0 0
       background: *crust
       foreground: *blue
@@ -98,7 +98,7 @@ main_bar: &main_bar
       border_color: *blue
 
     - type: text file # Song title non-underlined section
-      file_path: "C:/Users/hieronim/.glaze-wm/scripts/song_info_2.txt"
+      file_path: ".glaze-wm/scripts/song_info_2.txt"
       padding: 3 0 0 0
       background: *crust
       foreground: *blue
@@ -106,7 +106,7 @@ main_bar: &main_bar
       border_color: *crust
 
     - type: text file # Play/pause icon
-      file_path: "C:/Users/hieronim/.glaze-wm/scripts/song_playing.txt"
+      file_path: ".glaze-wm/scripts/song_playing.txt"
       font_size: 16
       padding: 0 4 0 0
       margin: "0 3 0 0"
