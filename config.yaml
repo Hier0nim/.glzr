@@ -472,9 +472,9 @@ keybindings:
     binding: "Alt+9"
 
   - command: "focus workspace 20"
-    binding: "Alt+E+1"
+    binding: "Alt+Ctrl+1"
   - command: "focus workspace 21"
-    binding: "Alt+E+2"
+    binding: "Alt+Ctrl+2"
 
   # Move focused workspace to a monitor in a given direction.
   - command: "move workspace left"
@@ -506,6 +506,6 @@ keybindings:
   - commands: ["move to workspace 9", "focus workspace 9"]
     binding: "Alt+Shift+9"
   - commands: ["move to workspace 20", "focus workspace 20"]
-    binding: "Alt+Shift+E+1"
+    binding: "Alt+Shift+Ctrl+1"
   - commands: ["move to workspace 21", "focus workspace 21"]
-    binding: "Alt+Shift+E+2"
+    binding: "Alt+Shift+Ctrl+2"
