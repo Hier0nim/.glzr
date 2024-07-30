@@ -39,7 +39,7 @@ general:
   toggle_workspace_on_refocus: true
 
   # Whether to show floating windows as always on top.
-  show_floating_on_top: true
+  show_floating_on_top: false
 
   # Amount to move floating windows by (eg. when using `alt+<hjkl>` on a floating window)
   floating_window_move_amount: "5%"
@@ -90,7 +90,7 @@ main_bar: &main_bar
       border_color: *crust
 
     - type: text file # Song title underlined section
-      file_path: ".glaze-wm/scripts/song_info_1.txt"
+      file_path: "C:/Users/hda/.glaze-wm/scripts/song_info_1.txt"
       padding: 3 0 0 0
       background: *crust
       foreground: *blue
@@ -98,7 +98,7 @@ main_bar: &main_bar
       border_color: *blue
 
     - type: text file # Song title non-underlined section
-      file_path: ".glaze-wm/scripts/song_info_2.txt"
+      file_path: "C:/Users/hda/.glaze-wm/scripts/song_info_2.txt"
       padding: 3 0 0 0
       background: *crust
       foreground: *blue
@@ -106,7 +106,7 @@ main_bar: &main_bar
       border_color: *crust
 
     - type: text file # Play/pause icon
-      file_path: ".glaze-wm/scripts/song_playing.txt"
+      file_path: "C:/Users/hda/.glaze-wm/scripts/song_playing.txt"
       font_size: 16
       padding: 0 4 0 0
       margin: "0 3 0 0"
@@ -174,34 +174,34 @@ main_bar: &main_bar
       font_size: 20
       border_color: *crust
 
-    - type: "battery"
-      label_draining: "<attr fs='14'>󰂂</attr> {battery_level}%"
-      label_power_saver: "<attr fs='14'>󰂂</attr> {battery_level}%"
-      label_charging: "<attr fs='14'>󰂋 </attr>{battery_level}%"
-      background: *crust
-      foreground: *teal
-      padding: "0 4 0 4"
-      margin: "0 3 0 3"
-      border_color: *crust
-      border_radius: "5"
-      border_width: "5"
-
-    - type: "network"
-      label_no_internet: " "
-      label_ethernet: "󰈁"
-      label_wifi_strength_0: "󰤭 "
-      label_wifi_strength_25: "󰤟 "
-      label_wifi_strength_50: "󰤢 "
-      label_wifi_strength_75: "󰤥 "
-      label_wifi_strength_100: "󰤨 "
-      background: *crust
-      foreground: *subtext1
-      padding: "0 4 0 4"
-      margin: "0 3 0 3"
-      border_color: *crust
-      border_radius: "5"
-      border_width: "5"
-      font_size: 14
+    # - type: "battery"
+    #   label_draining: "<attr fs='14'>󰂂</attr> {battery_level}%"
+    #   label_power_saver: "<attr fs='14'>󰂂</attr> {battery_level}%"
+    #   label_charging: "<attr fs='14'>󰂋 </attr>{battery_level}%"
+    #   background: *crust
+    #   foreground: *teal
+    #   padding: "0 4 0 4"
+    #   margin: "0 3 0 3"
+    #   border_color: *crust
+    #   border_radius: "5"
+    #   border_width: "5"
+    #
+    # - type: "network"
+    #   label_no_internet: " "
+    #   label_ethernet: "󰈁"
+    #   label_wifi_strength_0: "󰤭 "
+    #   label_wifi_strength_25: "󰤟 "
+    #   label_wifi_strength_50: "󰤢 "
+    #   label_wifi_strength_75: "󰤥 "
+    #   label_wifi_strength_100: "󰤨 "
+    #   background: *crust
+    #   foreground: *subtext1
+    #   padding: "0 4 0 4"
+    #   margin: "0 3 0 3"
+    #   border_color: *crust
+    #   border_radius: "5"
+    #   border_width: "5"
+    #   font_size: 14
 
     - type: "volume"
       label_low: "<attr fs='14'>🔊</attr>{volume_level}%"
@@ -332,16 +332,16 @@ window_rules:
   # Task Manager requires admin privileges to manage and should be ignored unless runnin:g
   # the WM as admin.
   - command: "ignore"
-    match_process_name: "/ScreenClippingHost|carlo/"
+    match_process_name: "/ScreenClippingHost|carlo|KommServ/"
 
   - command: "set floating"
     match_class_name: "#32770"
 
   - command: "set floating"
-    match_process_name: "/BuildProtokoll"
+    match_process_name: "/BuildProtokoll/"
 
   - command: "set floating"
-    match_title: "/Rename|Run/Debug Configurations|Settings|Harpoon/"
+    match_title: "/Adjust Namespaces|Generate GUID|Rename|Run/Debug Configurations|Settings|Harpoon/"
 
   - command: "set tiling"
     match_title: "Settings"
@@ -472,9 +472,9 @@ keybindings:
     binding: "Alt+9"
 
   - command: "focus workspace 20"
-    binding: "Alt+E+1"
+    binding: "Alt+Ctrl+1"
   - command: "focus workspace 21"
-    binding: "Alt+E+2"
+    binding: "Alt+Ctrl+2"
 
   # Move focused workspace to a monitor in a given direction.
   - command: "move workspace left"
@@ -506,6 +506,6 @@ keybindings:
   - commands: ["move to workspace 9", "focus workspace 9"]
     binding: "Alt+Shift+9"
   - commands: ["move to workspace 20", "focus workspace 20"]
-    binding: "Alt+Shift+E+1"
+    binding: "Alt+Shift+Ctrl+1"
   - commands: ["move to workspace 21", "focus workspace 21"]
-    binding: "Alt+Shift+E+2"
+    binding: "Alt+Shift+Ctrl+2"
