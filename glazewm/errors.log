@@ -1,0 +1,13 @@
+[2m2024-07-29T19:37:06.778543Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[2].commands: unexpected argument found
+ at line 115 column 15
+[2m2024-07-29T19:37:32.755782Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[2].commands: unexpected argument found
+ at line 115 column 15
+[2m2024-08-11T09:54:17.562399Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: unexpected argument found
+ at line 7 column 21
+[2m2024-08-11T09:54:30.189229Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: unexpected argument found
+ at line 7 column 21
+[2m2024-08-11T09:55:10.822340Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: unexpected argument found
+ at line 7 column 21
+[2m2024-08-11T09:56:44.234651Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[24].commands: unexpected argument found
+ at line 245 column 15
+[2m2024-08-11T20:25:25.150727Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
