@@ -10,7 +10,7 @@ window/bar:
   # Width of the window in physical pixels.
   width: '{{ self.args.MONITOR_WIDTH }}'
   # Height of the window in physical pixels.
-  height: '40'
+  height: '32'
   # X-position of the window in physical pixels.
   position_x: '{{ self.args.MONITOR_X }}'
   # Y-position of the window in physical pixels.
@@ -36,9 +36,9 @@ window/bar:
     align-items: center;
     height: 100%;
     color: rgb(255 255 255 / 90%);
-    font-family: ui-monospace, monospace;
+    font-family: JetBrainsMono Nerd Font, ui-monospace, monospace;
     font-size: 12px;
-    padding: 4px 24px;
+    padding: 2px 24px;
     border-bottom: 1px solid rgb(255 255 255 / 5%);;
     background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%));
 
@@ -57,6 +57,16 @@ window/bar:
         margin-right: 20px;
       template: |
         <i class="nf nf-fa-windows"></i>
+
+    template/clock:
+      providers: ['date']
+      # Available date tokens: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+      template: |
+        {{ date.toFormat(date.now, 'EEE	d MMM t') }}
+
+  group/center:
+    styles: |
+      justify-self: center;
 
     template/glazewm_workspaces:
       styles: |
@@ -95,16 +105,6 @@ window/bar:
             {{ workspace.displayName ?? workspace.name }}
           </button>
         }
-
-  group/center:
-    styles: |
-      justify-self: center;
-
-    template/clock:
-      providers: ['date']
-      # Available date tokens: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-      template: |
-        {{ date.toFormat(date.now, 'EEE	d MMM t') }}
 
   group/right:
     styles: |

@@ -28,7 +28,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '50px'
+    top: '42px'
     right: '10px'
     bottom: '10px'
     left: '10px'
@@ -90,10 +90,10 @@ workspaces:
   - name: '8'
     bind_to_monitor: *monitor_2
   - name: "9"
-    display_name: "chat"
+    display_name: 'chat'
     bind_to_monitor: *monitor_2
   - name: "10"
-    display_name: "🎶"
+    display_name: '󰎋'
     bind_to_monitor: *monitor_2
 
 window_rules:
@@ -116,9 +116,6 @@ window_rules:
         # Jetbrains IDE dialogs
         - window_class: { equals: '#32768' }
 
-        # System dialogs
-        - window_class: { equals: '#32770' }
-
   - commands: ['move --workspace 9']
     match:
       - window_process: { equals: 'ms-teams' }
@@ -127,7 +124,6 @@ window_rules:
 
   - commands: ['move --workspace 10']
     match:
-      - match_process_name: "/ms-teams|Discord/"
       - window_process: { equals: 'Spotify' }
 
 binding_modes:
