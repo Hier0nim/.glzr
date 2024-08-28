@@ -35,15 +35,17 @@ window/bar:
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     height: 100%;
-    color: rgb(255 255 255 / 90%);
+    margin: 0px 10px;
+    color: rgb(239 241 245 / 100%);
     font-family: JetBrainsMono Nerd Font, ui-monospace, monospace;
-    font-size: 12px;
-    padding: 2px 24px;
-    border-bottom: 1px solid rgb(255 255 255 / 5%);;
+    font-size: 14px;
+    padding: 3px 24px;
+    border-radius: 10px;
+    border: 1px solid rgb(183 189 248 / 100%);
     background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%));
 
     i {
-      color: rgb(115 130 175 / 95%);
+      color: rgb(183 189 248 / 100%);
       margin-right: 7px;
     }
 
@@ -74,7 +76,7 @@ window/bar:
         align-items: center;
 
         .workspace {
-          background: rgb(255 255 255 / 5%);
+          background: rgb(184 192 224 / 0%);
           margin-right: 4px;
           padding: 4px 8px;
           color: rgb(255 255 255 / 90%);
@@ -83,12 +85,12 @@ window/bar:
           cursor: pointer;
 
           &.displayed {
-            background: rgb(255 255 255 / 15%);
+            background: rgb(183 189 248 / 25%);
           }
 
           &.focused,
           &:hover {
-            background: rgb(75 115 255 / 50%);
+            background: rgb(183 189 248 / 50%);
           }
         }
       providers: ['glazewm']
@@ -120,8 +122,7 @@ window/bar:
       styles: |
         .binding-mode,
         .tiling-direction {
-          background: rgb(255 255 255 / 15%);
-          color: rgb(255 255 255 / 90%);
+          color: rgb(183 189 248 / 100%);
           border-radius: 2px;
           padding: 4px 6px;
           margin: 0;
