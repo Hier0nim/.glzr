@@ -119,15 +119,6 @@ window/bar:
 
     template/glazewm_other:
       providers: ['glazewm']
-      styles: |
-        .binding-mode,
-        .tiling-direction {
-          color: rgb(183 189 248 / 100%);
-          border-radius: 2px;
-          padding: 4px 6px;
-          margin: 0;
-        }
-
       template: |
         @for (bindingMode of glazewm.bindingModes) {
           <span class="binding-mode">
