@@ -1,10 +1,15 @@
-@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 html,
 body,
 #root {
   height: 100%;
-  font-family: Iosevka Nerd Font, 'Ubuntu', 'Noto Sans', 'Segoe UI', monospace;
+  font-family:
+    Iosevka Nerd Font,
+    "Ubuntu",
+    "Noto Sans",
+    "Segoe UI",
+    monospace;
   font-size: 12px;
 
   /* catppuccin frappe colors */
@@ -40,7 +45,7 @@ body,
   color: var(--text);
   user-select: none;
   padding: 30px 5px;
-  border-right: 1px solid var(--lavender);
+  border-right: 2px solid var(--lavender);
   border-top: 1px solid var(--lavender);
   border-bottom: 1px solid var(--lavender);
   background: color-mix(in hsl, var(--base) 95%, transparent);

@@ -1,5 +1,5 @@
-monitor_1: &monitor_1 0
-monitor_2: &monitor_2 1
+monitor_1: &monitor_1 1
+monitor_2: &monitor_2 0
 
 general:
   # Commands to run when the WM has started. This is useful for running a
