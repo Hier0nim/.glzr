@@ -36,9 +36,9 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: "10px"
-    right: "10px"
-    bottom: "10px"
+    top: "0px"
+    right: "0px"
+    bottom: "0px"
     left: "60px"
 
 window_effects:
@@ -235,11 +235,11 @@ keybindings:
 
   # Change focus from tiling windows -> floating -> fullscreen.
   - commands: ["wm-cycle-focus"]
-    bindings: ["alt+space"]
+    bindings: ["alt+g"]
 
   # Change the focused window to be floating.
   - commands: ["toggle-floating --centered"]
-    bindings: ["alt+shift+space"]
+    bindings: ["alt+shift+g"]
 
   # Change the focused window to be tiling.
   - commands: ["toggle-tiling"]
